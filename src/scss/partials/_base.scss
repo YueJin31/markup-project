@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $c-black;
+}
+
+html {
+  font-size: 14px;
+  font-family: $f-main;
+}
+
+b {
+  font-weight: 900;
+}
+
+p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include bp(xsmall) {
+    max-width: 540px;
+  }
+
+  @include bp(small) {
+    max-width: 720px;
+  }
+
+  @include bp(medium) {
+    max-width: 960px;
+  }
+
+  @include bp(large) {
+    max-width: 1090px;
+  }
+}
+
+.load-more {
+  padding: 22px 34px;
+  border: 1px solid $c-main;
+  color: $c-main;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 0;
+    background: #f0f0f0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.7s ease;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/********************
+** Typography
+********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $c-main;
+}
+
+h1, h2 {
+  @include font-size(30);
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+h3 {
+  @include font-size(24);
+  font-weight: normal;
+}

@@ -1,0 +1,25 @@
+.post-slider {
+    margin-bottom: 50px;
+
+    @include bp(medium) {
+        margin-bottom: 95px;
+    }
+
+    button {
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);;
+        z-index: 999;
+        font-size: 20px;
+        cursor: pointer;
+
+        &.prev-slide {
+            left: 2%;
+        }
+
+        &.next-slide {
+            right: 2%;
+        }
+    }
+}

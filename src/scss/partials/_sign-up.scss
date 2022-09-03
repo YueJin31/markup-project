@@ -1,0 +1,46 @@
+.sign-up {
+    background: #f0f0f0;
+    padding: 75px 15px 95px;
+    margin-bottom: 85px;
+
+    .form-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+
+        h2 {
+            color: #333;
+            margin-bottom: 75px;
+        }
+
+        .field {
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: none  !important;
+            border-bottom: 1px solid #000 !important;
+            padding-bottom: 15px;
+            outline: none;
+            font-family: $f-main;
+
+            &::placeholder {
+                font-size: 14px;
+                color: $c-main;
+                font-family: $f-main;
+            }
+        }
+
+        button {
+            position: absolute;
+            width: 32px;
+            height: 17px;
+            background: url('../img/send-icon.png');
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0px;
+            cursor: pointer;
+        }
+    }
+}

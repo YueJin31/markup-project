@@ -1,0 +1,35 @@
+.footer {
+  padding: 40px 15px;
+  position: relative;
+  background: #f0f0f0;
+  margin-top: 90px;
+
+  &__block {
+    a {
+      color: $c-black;
+
+      &:not(:last-child) {
+        margin-right: 17px;
+      }
+
+      i {
+        font-size: 16px;
+        color: $c-main;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+
+    @media screen and(max-width: 475px) {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+}

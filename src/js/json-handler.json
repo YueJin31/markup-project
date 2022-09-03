@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Lorem ipsum",
+    "tag": "Photo",
+    "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that i",
+    "image": "./img/post-img4.jpg"
+  },
+  {
+    "title": "Established fact",
+    "tag": "Lifestyle",
+    "text": "There are many variations of passages of Lorem Ipsum available, but the majority",
+    "image": "./img/post-img3.jpg"
+  }
+]
