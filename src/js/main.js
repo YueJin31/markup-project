@@ -27,7 +27,7 @@
     $.getJSON('./js/json-handler.json', function (data) {
       let post = '';
       $.each(data, function (i, item) {
-        post += `<a href="/post-full-sidebar.html" class="post d-none">`;
+        post += `<a href="./post-full-sidebar.html" class="post d-none">`;
         post += `<div class="img-wrapper">`;
         post += `<img src="${item.image}" alt="">`;
         post += `</div>`;
